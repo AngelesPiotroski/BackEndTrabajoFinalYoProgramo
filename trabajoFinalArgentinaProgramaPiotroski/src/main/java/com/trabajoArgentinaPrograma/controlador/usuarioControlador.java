@@ -52,7 +52,7 @@ public class usuarioControlador {
     }
 
     //este metodo sirve para buscar un usuarios
-    @GetMapping("/usuarios/{id}")
+    @GetMapping("/usuarios/buscar/{id}")
     public ResponseEntity<Usuario> obtenerUsuarioPorId(@PathVariable Long id) {
         try {
             Usuario usuario = usuarioServi.buscarUsuario(id);
@@ -63,7 +63,7 @@ public class usuarioControlador {
     }
 
     //este metodo sirve para actualizar usuario
-    @PutMapping("/usuario/{id}")
+    @PutMapping("/usuario/actualizar/{id}")
     public ResponseEntity<String> actualizarUsuario(@PathVariable Long id, @RequestBody Usuario detallesUsuario) {
         try {
             usuarioServi.modificarUsuario(id, detallesUsuario);
@@ -74,7 +74,7 @@ public class usuarioControlador {
     }
 
     //este metodo sirve para eliminar un usuario
-    @DeleteMapping("/usuario/{id}")
+    @DeleteMapping("/usuario/eliminar/{id}")
     public ResponseEntity<String> eliminarUsuario(@PathVariable Long id) {
         try {
             usuarioServi.borrarUsuario(id);

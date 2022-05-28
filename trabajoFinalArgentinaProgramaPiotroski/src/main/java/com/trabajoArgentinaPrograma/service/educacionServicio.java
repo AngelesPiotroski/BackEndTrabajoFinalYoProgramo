@@ -60,10 +60,12 @@ public class educacionServicio implements IEducacionService {
         if (educacionEncontrado != null) {
             educacionEncontrado.setInstituto(edu.getInstituto());
             educacionEncontrado.setUbicacion(edu.getUbicacion());
+            
             educacionEncontrado.setTitulo(edu.getTitulo());
             educacionEncontrado.setFechaInicio(edu.getFechaInicio());
             educacionEncontrado.setFechaFin(edu.getFechaFin());
             educacionEncontrado.setDescripcion(edu.getDescripcion());
+            System.out.println(edu.toString());
             repoEducacion.save(educacionEncontrado);
         } else {
             throw new notFoundException("Error no se encontro la educacion.");

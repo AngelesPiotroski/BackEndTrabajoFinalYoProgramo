@@ -29,16 +29,16 @@ public class Educacion implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_educacion;
 
-    @Column(name = "instituto", length = 60)
+    @Column(name = "instituto", length = 100)
     private String instituto;
 
-    @Column(name = "ubicacion", length = 60)
+    @Column(name = "ubicacion", length = 100)
     private String ubicacion;
 
-    @Column(name = "titulo", length = 60)
+    @Column(name = "titulo", length = 100)
     private String titulo;
 
-    @Column(name = "descripcion", length = 60)
+    @Column(name = "descripcion", length = 600)
     private String descripcion;
 
     @Column(name = "fechaInicio")

@@ -36,7 +36,7 @@ public class Persona implements Serializable {
     @Column(name = "email", length = 60)
     private String email;
     
-     @Column(name = "fotoPortada")
+     @Column(name = "fotoPortada", length = 600)
     private String fotoPortada;
     
     @Column(name = "telefono", length = 60)
@@ -58,7 +58,7 @@ public class Persona implements Serializable {
     @Column(name = "fotoPerfil")
     private String fotoPerfil;
 
-    @Column(name = "aboutMe")
+    @Column(name = "aboutMe", length= 600)
     private String aboutMe;
     
     @OneToOne

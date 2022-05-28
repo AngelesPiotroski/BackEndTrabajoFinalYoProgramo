@@ -28,16 +28,16 @@ public class Proyecto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_proyecto;
 
-    @Column(name = "nombre", length = 60)
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "url", length = 200)
+    @Column(name = "url")
     private String url;
     
-    @Column(name = "urlImagen", length = 200)
+    @Column(name = "urlImagen")
     private String urlImagen;
 
-    @Column(name = "descripcion", length = 60)
+    @Column(name = "descripcion")
     private String descripcion;
 
     @Column(name = "fechaRealizacion")

@@ -31,10 +31,10 @@ public class Trabajo implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_trabajo;
     
-    @Column(name = "nombre",length = 60)
+    @Column(name = "nombre",length = 100)
     private String nombre;
     
-    @Column(name = "puesto",length = 60)
+    @Column(name = "puesto",length = 100)
     private String puesto;
     
     @ElementCollection  
@@ -48,7 +48,7 @@ public class Trabajo implements Serializable {
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date fechaFin;
     
-    @Column(name = "ubicacion",length = 60)
+    @Column(name = "ubicacion",length = 100)
     private String ubicacion;
     
     public Trabajo() {

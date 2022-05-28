@@ -325,6 +325,7 @@ public class personaServicio implements IPersonaService {
                         educ.setFechaFin(edu.getFechaFin());
                         educ.setFechaInicio(edu.getFechaInicio());
                         educ.setInstituto(edu.getInstituto());
+                        educ.setTitulo(edu.getTitulo());
                         educ.setUbicacion(edu.getUbicacion());
                         repoEducacion.save(educ);
                     }
